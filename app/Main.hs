@@ -2,7 +2,7 @@
 
 
 module Main where
-import Lib
+-- import Lib
 
 import System.Win32.DLL (getModuleHandle)
 import Graphics.Win32
