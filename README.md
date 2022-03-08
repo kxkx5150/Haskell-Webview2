@@ -26,7 +26,7 @@ stack build
 copy  
 app/WebView2Loader.dll  
 app/WebV2dll.dll
-app/html
+app/html  
 <br><br><br><br><br><br><br><br><br>
 
 
