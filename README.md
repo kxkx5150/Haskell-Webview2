@@ -3,9 +3,14 @@
 
 <br><br>
 
-Windows  
+Windows10
 Webview2 Runtime (required)  
 https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section  
+
+<br>
+
+Windows 11  
+This package installed by default
 
 <br><br><br><br><br><br>
 
