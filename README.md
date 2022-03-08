@@ -17,6 +17,8 @@ app\Main.exe
 
 or
 
+<br><br>
+
 <pre>
 chcp 65001
 stack build
@@ -24,14 +26,16 @@ stack build
 copy  
 app/WebView2Loader.dll  
 app/WebV2dll.dll
-<br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 
 
 
 
 
 
-
+# WebV2dll
+VC++  
+https://github.com/kxkx5150/WebV2dll
 ## API
 
 <pre>
