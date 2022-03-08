@@ -1,0 +1,56 @@
+name:                Haskell-Webview2
+version:             0.1.0.0
+github:              "kxkx5150/Haskell-Webview2"
+license:             BSD3
+author:              "Kunihiro Ando"
+maintainer:          "senna5150ando@gmail.com"
+copyright:           "2022 Kunihiro Ando"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/Haskell-Webview2#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- Win32
+- FindBin
+
+library:
+  source-dirs: src
+
+executables:
+  Haskell-Webview2-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -Wunsupported-calling-conventions
+    extra-lib-dirs: app
+    extra-libraries: WebV2dll
+    dependencies:
+    - Haskell-Webview2
+
+tests:
+  Haskell-Webview2-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -Wunsupported-calling-conventions
+    extra-lib-dirs: app
+    extra-libraries: WebV2dll
+    dependencies:
+    - Haskell-Webview2
